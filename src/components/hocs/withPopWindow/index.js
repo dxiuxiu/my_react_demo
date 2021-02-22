@@ -4,9 +4,8 @@ import './index.scss'
 
 const withPopWindow = ()=>(WrappedComponent)=>{
     return class extends React.Component{
-
         wrappedComponentClick=()=>{
-
+           
         }
         
         render(){
@@ -15,8 +14,11 @@ const withPopWindow = ()=>(WrappedComponent)=>{
             }
             return (
                 <div className='withPopWindow_container'>
-                    <WrappedComponent {...mapMethodToProps} {...this.props} {...this.state}/>
-                    WrappedComponent
+                    <WrappedComponent {...mapMethodToProps} {...this.props}/>
+                    <div className='border'/>
+                    <div className='pop_window_container'>
+                        popWin
+                    </div>
                 </div>
             )
         }
