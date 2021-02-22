@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './index.less'
+import './index.scss'
 
 const withPopWindow = ()=>(WrappedComponent)=>{
     return class extends React.Component{

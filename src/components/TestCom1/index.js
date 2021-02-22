@@ -1,6 +1,6 @@
 import React from 'react'
 import withPopWindow from '@/components/hocs/withPopWindow'
-import './index.less'
+import './index.scss'
 
 function TestCom1(){
     return (
