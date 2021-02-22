@@ -10,11 +10,10 @@ export default function Page(){
         <Suspense fallback={<div>loading</div>}>
             <Router>
             <Switch>
-                {
+                {/* {
                     createRoute({routesConfig})
-                }
-               {/* <Route exact path='/' component={()=>lazy(()=>import('./App/App'))}/> */}
-               {/* <Route exact path='/' component={lazy(()=>import('@/pages/App/App'))}/> */}
+                } */}
+               <Route exact path='/' component={lazy(()=>import('@/pages/App/App'))}/>
             </Switch> 
         </Router>
         </Suspense>
