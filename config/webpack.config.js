@@ -565,6 +565,8 @@ module.exports = function (webpackEnv) {
           {
             inject: true,
             template: paths.appHtml,
+            // favicon: path.resolve(__dirname, '../public/favicon.ico'),
+            favicon: path.resolve(__dirname, '../public/icon_test.jpeg'),
           },
           isEnvProduction
             ? {
