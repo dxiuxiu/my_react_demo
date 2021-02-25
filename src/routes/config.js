@@ -8,6 +8,22 @@ const routeConfig=[
           import(/* webpackChunkName: "app" */ '@/pages/App/App'), // app.chunk.js
 		),
         exact:true
+    },
+    {
+        title:'hooks',
+        path:'/hooks',
+        component: lazy(() =>
+          import(/* webpackChunkName: "hooks" */ '@/pages/hooks'), 
+		),
+        exact:false
+    },
+    {
+        title:'normal',
+        path:'/normal',
+        component: lazy(() =>
+          import(/* webpackChunkName: "hooks" */ '@/pages/normal'), 
+		),
+        exact:false
     }
 ]
 export default routeConfig
